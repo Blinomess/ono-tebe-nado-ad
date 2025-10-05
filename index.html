@@ -12,10 +12,10 @@
   <body>
     <header class="header">
       <nav class="header-menu">
-        <ul class="header-menu-list">
-          <li><a class="header-list-link header-list-link-active">главная</a></li>
-          <li class="header-list-item"><a href="#lots" class="header-list-link">посмотреть лоты</a></li>
-          <li class="header-list-item"><a href="#about" class="header-list-link">об аукционе</a></li>
+        <ul class="header-links-list">
+          <li class="header-links-list-item header-links-list-item_no-bullit"><a class="header-link header-link-active">главная</a></li>
+          <li class="header-links-list-item"><a href="#lots" class="header-link">посмотреть лоты</a></li>
+          <li class="header-links-list-item"><a href="#about" class="header-link">об аукционе</a></li>
         </ul>
       </nav>
       <a class="header-logo">
@@ -31,8 +31,8 @@
     <main class="main">
 
       <seaction class="cover">
-        <div class="image-background"></div>
-        <h1 class="cover-logo-name">
+        <div class="overlay"></div>
+        <h1 class="cover-title">
           <span class="align-text-start">ОНО</span>
           <span class="align-text-center">ТЕБЕ</span>
           <span class="align-text-end">НАДО</span>
@@ -46,39 +46,38 @@
           </button>
         </div>
       </seaction>
-
-
+      
       <seaction class="lots" id="lots">
         <h2 class="lots-title">
           ЛОТЫ
         </h2>
-        <ul class="lots-list-cards">
-          <li class="lots-list-item">
-            <a class="lots-list-link" href="#0">
-              <article class="card list-card-film">
-                <div class="image-background"></div>
-                <h3 class="lots-list-title">Фильм режиссёра, который бросил киношколу</h3>
-                <p class="lots-list-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+        <ul class="lots-card-list">
+          <li class="lots-card-list-item">
+            <a class="card-link" href="#0">
+              <article class="card card-film">
+                <div class="overlay"></div>
+                <h3 class="card-title">Фильм режиссёра, который бросил киношколу</h3>
+                <p class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
               </article>             
             </a>
           </li>
-          <li class="lots-list-item">
-            <a class="lots-list-link" href="#0">
-              <article class="card list-card-book">
-                <div class="image-background"></div>
-                <h3 class="lots-list-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
-                <p class="lots-list-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 
+          <li class="lots-card-list-item">
+            <a class="card-link" href="#0">
+              <article class="card card-book">
+                <div class="overlay"></div>
+                <h3 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                <p class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 
                   1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» 
                   Джеймса Джойса?</p>
               </article>  
             </a>
           </li>
-          <li class="lots-list-item">
-            <a class="lots-list-link" href="#0">
-              <article class="card list-card-paint">
-                <div class="image-background"></div>
-                <h3 class="lots-list-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-                <p class="lots-list-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... 
+          <li class="lots-card-list-item">
+            <a class="card-link" href="#0">
+              <article class="card card-paint">
+                <div class="overlay"></div>
+                <h3 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                <p class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... 
                   Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
               </article>  
             </a>
@@ -109,6 +108,7 @@
         </div>
       </seaction>
     </main>
+
     <footer class="footer">
         <address class="footer-address">
           <a href="tel: +9 999 555 5555">+9 999 555 5555</a><br>
@@ -117,25 +117,25 @@
         </address>
         <nav class="footer-menu">
           <ul class-="footer-menu-list">
-            <li class="footer-list-item"><a class="footer-list-link footer-list-link-active">главная</a></li>
-            <li class="footer-list-item"><a href="#lots" class="footer-list-link">посмотреть лоты</a></li>
-            <li class="footer-list-item"><a href="#about" class="footer-list-link">об аукционе</a></li>
+            <li class="footer-list-item"><a class="footer-menu-link footer-menu-link-active">главная</a></li>
+            <li class="footer-list-item"><a href="#lots" class="footer-menu-link">посмотреть лоты</a></li>
+            <li class="footer-list-item"><a href="#about" class="footer-menu-link">об аукционе</a></li>
           </ul>
         </nav>
-        <ul class="footer-links-more">
+        <ul class="footer-social-list">
           <li class="list-link-more-item">
             <a class="item-link" href="#0">
-              <img src="./images/yt.svg" alt="Ютуб лого" class="item-link-image">
+              <img src="./images/yt.svg" alt="Ютуб лого" class="footer-social-icon">
             </a>
           </li>
           <li class="list-link-more-item">
             <a class="item-link" href="#0">
-              <img src="./images/vk.svg" alt="ВК лого" class="item-link-image">
+              <img src="./images/vk.svg" alt="ВК лого" class="footer-social-icon">
             </a>
           </li>
           <li class="list-link-more-item">
             <a class="item-link" href="#0"> 
-              <img src="./images/pinterest.svg" alt="Пинтерест лого" class="item-link-image">
+              <img src="./images/pinterest.svg" alt="Пинтерест лого" class="footer-social-icon">
             </a>
           </li>
         </ul>

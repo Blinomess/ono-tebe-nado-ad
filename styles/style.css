@@ -3,7 +3,7 @@
   background-color: #FFF;
 }
 
-.image-background{
+.overlay{
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
@@ -21,25 +21,29 @@
   padding:50px;
 }
 
-.header-menu-list{
+.header-links-list{
   display:flex;
   gap:32px;
   list-style: none;
   margin-bottom: 8px;
 }
 
-.header-list-item{
+.header-links-list-item{
   list-style: circle;
 }
 
-.header-list-link{ 
+.header-links-list-item_no-bullit{
+  list-style: none;
+}
+
+.header-link{ 
   font-size: 18px;
   font-weight: 400;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.header-list-link-active{
+.header-link-active{
   text-decoration: none;
 }
 
@@ -78,7 +82,7 @@
   flex-direction: column;
 }
 
-.cover-logo-name{
+.cover-title{
   display: flex;
   text-transform: uppercase;
   color:#FFF;
@@ -139,7 +143,7 @@
 
 /*main-lots*/
 .lots{
-  padding:180px 25px 150px;
+  padding:50px 25px 0;
   min-height: 723px;
   margin: 0 auto;
 }
@@ -153,7 +157,7 @@
   margin-left: 38px;
 }
 
-.lots-list-cards{
+.lots-card-list{
   display: flex;
   justify-content: space-between;
   color:#FFF;
@@ -162,13 +166,13 @@
   margin-bottom: 30px;
 }
 
-.lots-list-item{
+.lots-card-list-item{
   list-style: none;
   width: 334px;
   height: 596px;
 }
 
-.lots-list-link{
+.card-link{
   height: 100%;
   text-decoration: none;
 }
@@ -181,14 +185,14 @@
   justify-content: space-between;
 }
 
-.list-card-film{
+.card-film{
   background-image: url("../images/card-lot-01.jpg");
   background-size: cover;
   background-position: center;
   height: 100%;
 }
 
-.list-card-book{
+.card-book{
   position: relative;
   background-image: url("../images/card-lot-02.jpg");
   background-size: cover;
@@ -196,7 +200,7 @@
   height: 100%;
 }
 
-.list-card-paint{
+.card-paint{
   position: relative;
   background-image: url("../images/card-lot-03.jpg");
   background-size: cover;
@@ -204,7 +208,7 @@
   height: 100%;
 }
 
-.lots-list-title{
+.card-title{
   position: relative;
   z-index: 2;
   line-height: 120%;
@@ -214,7 +218,7 @@
   font-weight: 700;
 }
 
-.lots-list-text{
+.card-text{
   position: relative;
   z-index: 2;
   font-size: 20px;
@@ -309,25 +313,25 @@
   justify-self: center;
 }
 
-.footer-list-link{ 
+.footer-menu-link{ 
   font-size: 18px;
   font-weight: 400;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.footer-list-link-active{
+.footer-menu-link-active{
   text-decoration: none;
 }
 
-.footer-links-more{
+.footer-social-list{
   display: flex;
   list-style: none;
   gap: 48px;
   
 }
 
-.item-link-image{
+.footer-social-icon{
   width: 48px;
   height: 48px;
 }
